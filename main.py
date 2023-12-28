@@ -44,25 +44,33 @@ def score_calculator(a,b,c,d,e):
 
 
 
-def Grade_calculator(total_score):
+def Grade_calculator(total_score,e):
+
+  end_term = min(e*.45,40)
+
+  if end_term >10:
+    
   
-  if total_score >= 90:
-    return 'S'
+    if total_score >= 90:
+      return 'S'
+    
+    elif total_score >= 80:
+      return 'A'
   
-  elif total_score >= 80:
-    return 'A'
-
-  elif total_score >= 70:
-    return 'B'
-
-  elif total_score >= 60:
-    return 'C'
-
-  elif total_score >= 50:
-    return 'D'
-
-  elif total_score >= 40:
-    return 'E'
+    elif total_score >= 70:
+      return 'B'
+  
+    elif total_score >= 60:
+      return 'C'
+  
+    elif total_score >= 50:
+      return 'D'
+  
+    elif total_score >= 40:
+      return 'E'
+  
+    else:
+      return 'F'
 
   else:
     return 'F'
@@ -93,8 +101,17 @@ end_term = min(e*.45,40)
 
 if st.button('Start Calculating!'):
 
+  quiz = 0.14*max(b,c) + 0.6*min(b,c)
+  st.text(quiz)
+
+  
+  assignment = 0.4*a
+  st.text(assignment)
+  
+  
+
   st.markdown(f"""
-  <h3 align="center">Your End Term Score capped to 100 : {end_term:.2f} 
+  <h3 align="center">Your End Term Score capped out of 40 : {end_term:.2f} 
   """, unsafe_allow_html=True)
   
   st.markdown(f"""
