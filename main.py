@@ -94,7 +94,7 @@ e = st.number_input(label = " " , key="fifth_digit_input")  # Using an empty str
 
 Total_score = score_calculator(a,b,c,d,e)
 
-grade = Grade_calculator(Total_score)
+grade = Grade_calculator(Total_score,e)
 
 end_term = min(e*.45,40)
 
