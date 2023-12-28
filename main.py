@@ -125,9 +125,17 @@ if st.button('Start Calculating!'):
   st.markdown(f"""
   <h3 align="center">Your Total Score : {Total_score:.2f} 
   """, unsafe_allow_html=True)
+  
   st.markdown(f"""
   <h3 align="center">Your Grade for BA is : {grade} 
   """, unsafe_allow_html=True)
+
+  st.markdown("<hr>", unsafe_allow_html=True)
+  
+  
+  st.markdown(f"""
+    <h3 align="center">No Score rounding off is done in the above calculations, Your grades or Total Score may vary based on Score Rounding off by IITM
+     """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
