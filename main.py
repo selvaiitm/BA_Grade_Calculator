@@ -117,7 +117,7 @@ if st.button('Start Calculating!'):
   <h3 align="center">Your End Term Score out of 40 capped at 40: {end_term:.2f} 
   """, unsafe_allow_html=True)
 
-   st.markdown(f"""
+  st.markdown(f"""
   <h3 align="center">Your Bonus score : {d}
    """, unsafe_allow_html=True)
 
