@@ -34,7 +34,7 @@ def score_calculator(a,b,c,d,e):
   
   quiz = 0.14*max(b,c) + 0.6*min(b,c)
   
-  end_term = min(e*.45,0.4)
+  end_term = min(e*.45,40)
   
   total_score = quiz+assignment+end_term+d
   if total_score >100:
@@ -88,13 +88,13 @@ Total_score = score_calculator(a,b,c,d,e)
 
 grade = Grade_calculator(Total_score)
 
-end_term = min(e*.45,0.4)
+end_term = min(e*.45,40)
 
 
 if st.button('Start Calculating!'):
 
   st.markdown(f"""
-  <h3 align="center">Your End_Term_Score capped to 100 : {end_term:.2f} 
+  <h3 align="center">Your End Term Score capped to 100 : {end_term:.2f} 
   """, unsafe_allow_html=True)
   
   st.markdown(f"""
