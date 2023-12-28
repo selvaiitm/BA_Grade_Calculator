@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.text('')
-
 
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("""
@@ -38,7 +36,7 @@ def score_calculator(a,b,c,d,e):
   
   end_term = min(e*.45,0.4)
   
-  total_score = quiz+assignment+endterm+d
+  total_score = quiz+assignment+end_term+d
   if total_score >100:
     total_score = 100
   return total_score
