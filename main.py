@@ -69,7 +69,7 @@ def Grade_calculator(total_score):
   else:
     return 'F'
 
-st.markdown(""" <h5 align = "center"> Enter all the scores as visible in the dashboard """, unsafe_allow_html=True)
+st.markdown(""" <h3 align = "center"> Enter all the scores as visible in the dashboard </h3> """, unsafe_allow_html=True)
 
 st.markdown(""" <h5 align = "center">Enter the Average  assignment for final score :</h5>""", unsafe_allow_html=True)
 a = st.number_input(label = " " , key="first_digit_input") 
