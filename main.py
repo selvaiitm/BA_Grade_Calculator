@@ -72,13 +72,13 @@ st.markdown(""" <h3 align = "center"> Enter all the scores as visible in the das
 st.markdown(""" <h5 align = "center">Enter the Average  assignment for final score :</h5>""", unsafe_allow_html=True)
 a = st.number_input(label = " " , key="first_digit_input") 
 
-st.markdown(""" <h5 align = "center">Enter the quiz one score don't enter zero if absent:</h5>""", unsafe_allow_html=True)
+st.markdown(""" <h5 align = "center">Enter the quiz one score , enter zero if absent:</h5>""", unsafe_allow_html=True)
 b = st.number_input(label = " " , key="second_digit_input")  # Using an empty string as label
 
-st.markdown(""" <h5 align = "center">Enter the quiz two score don't enter zero with absent:</h5>""", unsafe_allow_html=True)
+st.markdown(""" <h5 align = "center">Enter the quiz two score, enter zero with absent:</h5>""", unsafe_allow_html=True)
 c = st.number_input(label = " " , key="third_digit_input")  # Using an empty string as label
 
-st.markdown(""" <h5 align = "center">Enter the bonus marks:</h5>""", unsafe_allow_html=True)
+st.markdown(""" <h5 align = "center">Enter the bonus marks :</h5>""", unsafe_allow_html=True)
 d = st.number_input(label = " " , key="fourth_digit_input")  # Using an empty string as label
 
 st.markdown(""" <h5 align = "center">Enter the Endterm Exam score:</h5>""", unsafe_allow_html=True)
