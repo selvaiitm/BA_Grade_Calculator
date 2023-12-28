@@ -104,7 +104,7 @@ quiz = .14*max(b,c)+.06*min(b,c)
 if st.button('Start Calculating!'):
 
   st.markdown(f"""
-  <h3 align="center">Your quiz score out of 20:{quiz:.2f}
+  <h3 align="center">Your quiz score out of 20 : {quiz:.2f}
   """, unsafe_allow_html=True)
 
 
