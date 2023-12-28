@@ -144,3 +144,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
+
+st.markdown("""
+<h4 align="center"> Dedicating this app to KALPITA the course TA for BA , for her selfless dedication towards teaching us the concepts in depth and maintaining a record of all the live sessions recordings for the students for easy reference in the future and for the prompt reply in the discourse forum regarding any doubts we had in the subject. </h4>
+""", unsafe_allow_html=True)
+
+st.markdown("<hr>", unsafe_allow_html=True)
+
