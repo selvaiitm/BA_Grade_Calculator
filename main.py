@@ -32,7 +32,7 @@ def score_calculator(a,b,c,d,e):
   
   # Quiz Marks = 0.7*Max(Qz1, Qz2) + 0*3Min(Qz1, Qz2)
   
-  quiz = 0.14*max(b,c) + 0.6*min(b,c)
+  quiz = 0.14*max(b,c) + 0.06*min(b,c)
   
   end_term = min(e*.45,40)
   
@@ -97,19 +97,22 @@ Total_score = score_calculator(a,b,c,d,e)
 grade = Grade_calculator(Total_score,e)
 
 end_term = min(e*.45,40)
+assignment = 0.4*a
 
+quiz = .14*max(b,c)+.06*min(b,c)
 
 if st.button('Start Calculating!'):
 
-  quiz = 0.14*max(b,c) + 0.6*min(b,c)
-  st.text(quiz)
+  st.markdown(f"""
+  <h3 align="center">Your quiz score out of 20:{quiz:.2f}
+  """, unsafe_allow_html=True)
 
-  
-  assignment = 0.4*a
-  st.text(assignment)
-  
-  
 
+  st.markdown(f"""
+  <h3 align="center">Your assignmnet score out of 40 : {assignment:.2f}
+  """, unsafe_allow_html=True)
+  
+  
   st.markdown(f"""
   <h3 align="center">Your End Term Score capped out of 40 : {end_term:.2f} 
   """, unsafe_allow_html=True)
