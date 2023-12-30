@@ -34,7 +34,7 @@ def score_calculator(a,b,c,d,e):
   
   quiz = 0.14*max(b,c) + 0.06*min(b,c)
   
-  end_term = min(e*.45,40)
+  end_term = e*.4
   
   total_score = quiz+assignment+end_term+d
   if total_score >100:
@@ -46,7 +46,7 @@ def score_calculator(a,b,c,d,e):
 
 def Grade_calculator(total_score,e):
 
-  end_term = min(e*.45,40)
+  end_term = e*.40
 
   if end_term >10:
     
@@ -96,7 +96,7 @@ Total_score = score_calculator(a,b,c,d,e)
 
 grade = Grade_calculator(Total_score,e)
 
-end_term = min(e*.45,40)
+end_term = e*.4
 assignment = 0.4*a
 
 quiz = .14*max(b,c)+.06*min(b,c)
